@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * main- determines if a number is positive, zero, or negative.
+ * main- output if a number is positive, zero, or negative.
  *
  * Return: return 0
  */
