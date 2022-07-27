@@ -3,7 +3,7 @@
 /**
  * main - Write a function that prints the alphabet, in lowercase, followed by a new line.
  *
- * Return: Always 0.
+ * Return: void
  */
 
 void print_alphabet(void)
@@ -12,10 +12,7 @@ void print_alphabet(void)
 
 	for (abc = 'a'; abc <= 'z'; abc++)
 	{
-		putchar(abc);
+		_putchar(abc);
 	}
-	putchar('\n');
-	return (0);
+	_putchar('\n');
 }
-
-
