@@ -1,4 +1,4 @@
-#include main.h
+#include "main.h"
 
 /**
  * mul - Fuction that multiplies two intergers
