@@ -21,4 +21,5 @@ void print_triangle(int size)
 		if (j < (size - 1))
 			_putchar('\n');
 	}
+	_putchar('\n');
 }
