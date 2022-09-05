@@ -7,7 +7,6 @@
  *
  * Return: String lenght
  */
-
 int _strlen(char *s)
 {
 	int x = 0;
