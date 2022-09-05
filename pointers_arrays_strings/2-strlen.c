@@ -7,12 +7,13 @@
  *
  * Return: String lenght
  */
+
 int _strlen(char *s)
 {
-	int x = 0;
+	int c = 0;
 
-	while (*s[x] != '\0')
-		x++;
+	while (*s[c] != '\0')
+		c++;
 
-	return (x);
+	return (c);
 }
