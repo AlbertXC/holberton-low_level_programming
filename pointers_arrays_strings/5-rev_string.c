@@ -10,18 +10,15 @@
 void rev_string(char *s)
 {
 	int e = 0, f = 0;
-	char str[700];
+	char str;
 
-	while (*(s + e))
-	{
-		*(str + e) = *(s + e);
+	while (s[j++])
 		e++;
-	}
-	e = e - 1;
-	while (e >= 0)
+
+	for (j = e - 1; j >= e / 2; j--)
 	{
-		*(s + e) = *(str + f);
-		e++;
-		f++;
+		str = s[j];
+		s[j] = s[e - j - 1];
+		s[e - j - 1] = str;
 	}
 }
