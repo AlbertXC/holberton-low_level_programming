@@ -14,7 +14,7 @@ void puts2(char *str)
 
 	while (str[c++])
 		d++;
-	
+
 	for (c = 0; c < d; c += 2)
 		_putchar(str[c]);
 
