@@ -12,7 +12,7 @@ void puts_half(char *str)
 {
 	int n, m = 0;
 
-	while (*(str + n))
+	while (*(str + m))
 		m++;
 	m = n / 2;
 	if (m % 2)
