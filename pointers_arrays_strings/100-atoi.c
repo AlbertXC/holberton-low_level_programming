@@ -12,7 +12,7 @@ int _atoi(char *s)
 {
 	int w, x, y, z;
 
-	w = s = 0;
+	w = y = 0;
 	z = 1;
 
 	while ((*(s + 1) < '0' || *(s + w) > '9') && (*(s + 1) != '\0'))
