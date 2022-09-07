@@ -27,5 +27,5 @@ int _atoi(char *s)
 		y = y * 10 + z * (*(s + x) - '0');
 		x++;
 	}
-	return (n);
+	return (y);
 }
