@@ -14,9 +14,9 @@ char *cap_string(char *s)
 	int sow[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
 
 	if (*(s + a) >= 97 && *(s + a) <= 122)
-		*(s + a) = *(s + count) - 32;
+		*(s + a) = *(s + a) - 32;
 	a++;
-	while (*(s + count) != '\0')
+	while (*(s + a) != '\0')
 	{
 		for (y = 0; y < 13; y++)
 		{
