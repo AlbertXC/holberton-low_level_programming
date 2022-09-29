@@ -3,7 +3,8 @@
 /**
  * _print_rev_recursion - Function that returns the lenght
  *						  of a string
- * @s: string
+ * @s: string to print
+ *
  * Return: the lenght of a string
  */
 
