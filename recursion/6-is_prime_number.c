@@ -8,7 +8,7 @@
  * Return: 1 if prime, 0 if not prime
  */
 
-int prime_check(int s, int t)
+int is_prime(int s, int t)
 {
 	if (t < 2 || t % s == 0)
 		return (0);
