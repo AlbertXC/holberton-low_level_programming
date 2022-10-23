@@ -11,7 +11,7 @@ size_t print_list(const list_t *h)
 	unsigned int i = 0;
 	const list_t *tmp = h;
 
-	for (; tmp; *tmp = tmp->next, i++)
+	for (; tmp; tmp = tmp->next, i++)
 		printf("[%d] %s\n", tmp->len, tmp->str);
 	return (i);
 }
