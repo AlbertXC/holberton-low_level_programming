@@ -30,7 +30,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	}
 	else
 	{
-		for (i = 0; tmp->next !0; i++)
+		for (i = 0; tmp->next != 0; i++)
 		{
 			tmp = tmp->next;
 		}
