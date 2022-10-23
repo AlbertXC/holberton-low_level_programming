@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * before_main - function that prints a string before
+ * before - function that prints a string before
  *				  the main function is executed.
  */
 
