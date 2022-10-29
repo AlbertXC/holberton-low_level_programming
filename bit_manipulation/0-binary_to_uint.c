@@ -22,5 +22,5 @@ unsigned int binary_to_unit(const char *b)
 			deci ^= 1;
 		n++;
 	}
-	return (decimal);
+	return (deci);
 }
