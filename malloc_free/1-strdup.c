@@ -9,7 +9,7 @@
  *		   NULL if insufficient memory was available
  */
 
-char *_strdup(char *str);
+char *_strdup(char *str)
 {
 	char *s;
 	unsigned int a = 0;
