@@ -20,4 +20,4 @@ char *create_array(unsigned int size, char c)
 	for (i = 0; i < size; i++)
 		ca[i] = c;
 	return (ca);
-
+}
