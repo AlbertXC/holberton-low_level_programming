@@ -28,4 +28,4 @@ char *str_concat(char *s1, char *s2)
 	for (z = 0; z < x; y++, z++)
 		v[y] = s2[z];
 	return (v);
-
+}
