@@ -28,7 +28,7 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 
 	for (w = 0; s1[w]; w++)
-		v[x++] = s2[x];
+		v[x++] = s1[w];
 
 	for (w = 0; s2[w]; w++)
 		v[x++] = s2[w];
