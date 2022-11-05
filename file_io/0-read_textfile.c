@@ -22,16 +22,16 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 
 	rd = read(opn, bff, letters);
-	wrt = write(STDOUT_FILENO, buff, rd);
+	wrt = write(STDOUT_FILENO, bff, rd);
 	opn = open(filename, O_RDONLY);
 
 	if (rd == -1 || wrt == -1 || opn == -1 || wrt != rd)
 	{
-		free(buff);
+		free(bff);
 		return (0);
 	}
 
-	free(buff);
+	free(bff);
 	close(o);
 
 	return (wrt);
