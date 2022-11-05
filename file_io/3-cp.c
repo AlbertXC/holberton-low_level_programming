@@ -43,7 +43,7 @@ int main(int argc, char *argv[])
 	}
 
 	ffrom = open(argv[1], O_RDONLY);
-	fto = open(argv[2], O_WRONLY | O_TRUNC | O_APPEND, 0664);
+	fto = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
 	error_file(ffrom, fto, argv);
 
 	rd = 1024;
