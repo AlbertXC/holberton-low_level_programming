@@ -11,28 +11,24 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	ssize_t rd, wrt, opn;
-	char *bff;
+	int file_d, rdd;
+	char *bff = malloc(sizeof(char *) * letters);
 
-	if (filename == NULL)
+	if (!bff)
 		return (0);
 
-	bff = (malloc(sizeof(char) * letters));
-	if (bff == NULL)
+	if (!filename)
 		return (0);
-
-	rd = read(opn, bff, letters);
-	wrt = write(STDOUT_FILENO, bff, rd);
-	opn = open(filename, O_RDONLY);
-
-	if (rd == -1 || wrt == -1 || opn == -1 || wrt != rd)
-	{
-		free(bff);
+	
+	file_d = open(filename, O_RDONLY, 0600);
+	if (file_d == -1)
 		return (0);
-	}
+	
+	rdd = read(file_d, bff, letters);
+	write(STDOUT_FILENO, bff, rdd);
 
 	free(bff);
-	close(opn);
-
-	return (wrt);
+	close(fd);
+	
+	return (rdd);
 }
