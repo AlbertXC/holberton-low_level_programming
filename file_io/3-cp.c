@@ -44,18 +44,18 @@ int main(int argc, char *argv[])
 
 	ffrom = open(argv[1], O_RDONLY);
 	fto = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
-	close_err(ffrom, fto, argv);
+	error_file(ffrom, fto, argv);
 
 	rd = 1024;
 	while (rd == 1024)
 	{
 		rd = read(ffrom, buff, 1024);
 		if (rd == -1)
-			close_err(-1, 0, argv);
+			error_file(-1, 0, argv);
 
 		wrt = write(fto, buff, rd);
 		if (wrt == -1)
-			close_err(0, -1, argv);
+			error_file(0, -1, argv);
 	}
 
 	close_err = close(ffrom);
