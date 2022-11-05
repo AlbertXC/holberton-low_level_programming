@@ -44,7 +44,7 @@ int main(int argc, char *argv[])
 
 	ffrom = open(argv[1], O_RDONLY);
 	fto = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
-	close_err = (ffrom, fto, argv);
+	close_err(ffrom, fto, argv);
 
 	rd = 1024;
 	while (rd == 1024)
